@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://chat-app-puce-two.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
@@ -21,7 +21,7 @@ app.use(express.json());
 mongoose.connect("mongodb+srv://lorianyango23:chatApp@cluster0.or7rx.mongodb.net/ChatApp")
   .then(() => console.log("Connected to MongoDB Atlas successfully!"))
   .catch((err) => console.error("MongoDB connection error:", err));
-  
+
 // mongoose.connect("mongodb+srv://lorianyango23:chatApp@cluster0.or7rx.mongodb.net/ChatApp", {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
