@@ -18,10 +18,14 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-mongoose.connect("mongodb://127.0.0.1:27017/chatApp", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-},);
+mongoose.connect("mongodb+srv://lorianyango23:chatApp@cluster0.or7rx.mongodb.net/ChatApp")
+  .then(() => console.log("Connected to MongoDB Atlas successfully!"))
+  .catch((err) => console.error("MongoDB connection error:", err));
+  
+// mongoose.connect("mongodb+srv://lorianyango23:chatApp@cluster0.or7rx.mongodb.net/ChatApp", {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// },);
 
 const messageSchema = new mongoose.Schema({
   username: String,
