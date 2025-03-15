@@ -18,5 +18,8 @@ This is a simple chartbox app that used MERN + socket.io that indicates when a u
 The backend is deployed in the cloud server called **Render** and the fronmtend is deployed on **vercel**
 
 
+To visit the chatapp please click on this link **https://chat-app-puce-two.vercel.app/**
+
+
 
 **DEVELOPER - LORAIN ORUKO**
